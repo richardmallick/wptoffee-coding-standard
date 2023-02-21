@@ -78,19 +78,41 @@
 		<type>warning</type>
 	</rule>
 
+	<!-- Ignore WordPress FileName validation  -->
+	<rule ref="WordPress.Files.FileName">
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+	</rule>
+
+	<!-- Ignore WordPress NamingConventions validation  -->
+	<rule ref="WordPress.NamingConventions.ValidVariableName">
+		<exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase"/>
+        <exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+        <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
+	</rule>
+
+	<!-- Ignore WordPress YodaConditions validation  -->
+	<rule ref="WordPress.PHP.YodaConditions">
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
+	</rule>
 	<!-- Missing Package Tag  -->
-	<rule ref="Squiz.Commenting.FileComment.MissingPackageTag" />
-	<rule ref="Squiz.Commenting.FileComment.Missing" />
+	<!-- <rule ref="Squiz.Commenting.FileComment.MissingPackageTag" />
+	<rule ref="Squiz.Commenting.FileComment.Missing" /> -->
 
 	<!-- Squize  -->
 	<rule ref="Squiz.Classes.ClassFileName" /> <!-- Class name doesn't match filename -->
 	<rule ref="Squiz.Classes.ValidClassName" /> <!-- Valid class name -->
 	<rule ref="Squiz.Commenting.FunctionCommentThrowTag.Missing" /> <!-- Missing @throws tag in function comment -->
-	<rule ref="Squiz.Commenting.FileComment.Missing" /> <!-- Missing file doc comment -->
+	<!-- <rule ref="Squiz.Commenting.FileComment.Missing" /> Missing file doc comment -->
 
 	<!-- Ignore class name validation  -->
 	<rule ref="Squiz.Classes.ValidClassName">
 		<exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+	</rule>
+
+	<!-- Ignore Commenting validation  -->
+	<rule ref="Squiz.Commenting.FileComment">
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+		<exclude name="Squiz.Commenting.FileComment.Missing"/>
 	</rule>
 
 	<!-- Squiz.Classes.ClassFileName -->

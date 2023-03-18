@@ -82,6 +82,13 @@
 	<rule ref="WordPress.Files.FileName">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 	</rule>
+	
+	<!-- Ignore WordPress FilesUnslash  -->
+	<rule ref="WordPress">
+		<exclude name="WordPress.WP.DeprecatedFunctions"/>
+		<exclude name="WordPress.WP.ValidatedSanitizedInput.FilesNotUnslashed"/>
+		<exclude name="WordPress.WP.DeprecatedFunctions.wp_unslash"/>
+	</rule>
 
 	<!-- Ignore WordPress NamingConventions validation  -->
 	<rule ref="WordPress.NamingConventions.ValidVariableName">

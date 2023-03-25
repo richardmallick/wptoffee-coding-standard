@@ -71,10 +71,10 @@
 		</properties>
 	</rule>
 
-	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine" />
-	<rule ref="PEAR">
+	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
 	</rule>
+
 
 	<!-- Check class exists  -->
 	<rule ref="Generic.Classes.DuplicateClassName">

@@ -71,10 +71,10 @@
 		</properties>
 	</rule>
 
-	<rule ref="PEAR.NamingConventions.ValidClassName">
+	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
 	</rule>
-
 
 	<!-- Check class exists  -->
 	<rule ref="Generic.Classes.DuplicateClassName">
@@ -84,7 +84,6 @@
 	<!-- Ignore WordPress FileName validation  -->
 	<rule ref="WordPress.Files.FileName">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
-		
 	</rule>
 
 	<!-- Ignore WordPress FilesUnslash  -->

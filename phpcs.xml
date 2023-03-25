@@ -81,6 +81,7 @@
 	<!-- Ignore WordPress FileName validation  -->
 	<rule ref="WordPress.Files.FileName">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+		
 	</rule>
 
 	<!-- Ignore WordPress FilesUnslash  -->
@@ -94,6 +95,9 @@
         <exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
         <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
 	</rule>
+
+	<exclude name="WordPress.NamingConventions.MethodName.MethodNotSnakeCase"/>
+	<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
 
 	<!-- Ignore WordPress YodaConditions validation  -->
 	<rule ref="WordPress.PHP.YodaConditions">

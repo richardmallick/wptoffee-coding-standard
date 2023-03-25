@@ -72,6 +72,9 @@
 	</rule>
 
 	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine" />
+	<rule ref="PEAR">
+		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
+	</rule>
 
 	<!-- Check class exists  -->
 	<rule ref="Generic.Classes.DuplicateClassName">
@@ -87,6 +90,7 @@
 	<!-- Ignore WordPress FilesUnslash  -->
 	<rule ref="WordPress">
 		<exclude name="WordPress.Security.ValidatedSanitizedInput.MissingUnslash"/>
+		<exclude name="WordPress.NamingConventions.MethodName.MethodNotSnakeCase"/>
 	</rule>
 
 	<!-- Ignore WordPress NamingConventions validation  -->
@@ -95,9 +99,6 @@
         <exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
         <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
 	</rule>
-
-	<exclude name="WordPress.NamingConventions.MethodName.MethodNotSnakeCase"/>
-	<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
 
 	<!-- Ignore WordPress YodaConditions validation  -->
 	<rule ref="WordPress.PHP.YodaConditions">

@@ -71,7 +71,7 @@
 		</properties>
 	</rule>
 
-	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine">
+	<rule ref="PEAR.NamingConventions.ValidClassName">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
 	</rule>
 

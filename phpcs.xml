@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<ruleset name="WpToffee">
+<ruleset name="WPToffee">
 
-    <description>WpToffee Coding Standard</description>
+    <description>WPToffee Coding Standard</description>
 
 	<!-- Excludes  -->
 	<exclude-pattern>*/freemius/*</exclude-pattern>
@@ -44,6 +44,12 @@
 	<rule ref="Generic.Arrays.DisallowShortArraySyntax">
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
 	</rule>
+	<rule ref="Universal.Arrays.DisallowShortArraySyntax">
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+	</rule>
+	<rule ref="Universal.Files.SeparateFunctionsFromOO">
+		<exclude name="Universal.Files.SeparateFunctionsFromOO.Mixed" />
+	</rule>
 
 	<!-- Generic.Commenting -->
 	<rule ref="Generic.Commenting" />
@@ -63,13 +69,16 @@
 	<rule ref="Generic.Files.EndFileNewline">
 		<exclude name="Generic.Files.EndFileNewline.NotFound" />
 	</rule>
+	<rule ref="Generic.Files.LineEndings">
+		<exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
+	</rule>
 	
 	<!-- Nested level of condition is 3 ro reduce code complexity -->
-	<rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall">
+	<!-- <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall">
 		<properties>
 			<property name="maxNestedLevel" value="3" />
 		</properties>
-	</rule>
+	</rule> -->
 
 	<rule ref="PEAR.Functions.FunctionCallSignature.EmptyLine">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
@@ -103,9 +112,13 @@
 	<rule ref="WordPress.PHP.YodaConditions">
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 	</rule>
+	<rule ref="Squiz.Commenting.FunctionComment">
+		<exclude name="Squiz.Commenting.FunctionComment.WrongStyle"/>
+	</rule>
 	<!-- Missing Package Tag  -->
 	<!-- <rule ref="Squiz.Commenting.FileComment.MissingPackageTag" />
 	<rule ref="Squiz.Commenting.FileComment.Missing" /> -->
+
 
 	<!-- Squize  -->
 	<rule ref="Squiz.Classes.ClassFileName" /> <!-- Class name doesn't match filename -->
@@ -138,7 +151,7 @@
     <rule ref="WordPress-Extra" /> 
 
 	<!-- Allow short ternary (codition ? true : false) -->
-	<rule ref="WordPress.PHP.DisallowShortTernary.Found" />
+	<!-- <rule ref="WordPress.PHP.DisallowShortTernary.Found" /> -->
 
 	<!-- exclude WordPress InvalidClassFileName  -->
 	<rule ref="WordPress.Files.FileName">

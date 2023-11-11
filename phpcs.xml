@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
-<ruleset name="WPToffee">
+<ruleset 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	name="WPToffee" 
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
-    <description>WPToffee Coding Standard</description>
+	<description>WPToffee Coding Standar</description>
 
 	<!-- Excludes  -->
 	<exclude-pattern>*/freemius/*</exclude-pattern>
